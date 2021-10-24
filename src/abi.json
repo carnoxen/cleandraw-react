@@ -1,0 +1,95 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string[]",
+				"name": "_users",
+				"type": "string[]"
+			},
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "count",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string[]",
+						"name": "winners",
+						"type": "string[]"
+					}
+				],
+				"internalType": "struct Gashapon.Rank[]",
+				"name": "_ranks",
+				"type": "tuple[]"
+			},
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			}
+		],
+		"name": "allocateUsers",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			}
+		],
+		"name": "getList",
+		"outputs": [
+			{
+				"components": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "count",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string[]",
+								"name": "winners",
+								"type": "string[]"
+							}
+						],
+						"internalType": "struct Gashapon.Rank[]",
+						"name": "ranks",
+						"type": "tuple[]"
+					},
+					{
+						"internalType": "bool",
+						"name": "created",
+						"type": "bool"
+					}
+				],
+				"internalType": "struct Gashapon.List",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
